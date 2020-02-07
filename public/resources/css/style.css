@@ -1,0 +1,102 @@
+/* ======================= */
+
+
+/* Document Rules
+/* ======================= */
+
+
+/* font-family: 'Amiko', sans-serif;
+font-family: 'Arima Madurai', cursive;
+font-family: 'Farsan', cursive;
+font-family: 'Lalezar', cursive;
+font-family: 'Mogra', cursive;
+font-family: 'Rakkas', cursive;
+font-family: 'Rasa', serif;
+font-family: 'Shrikhand', cursive;
+font-family: 'Suez One', serif;
+font-family: 'Yatra One', cursive; */
+
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-family: Amiko, Arial, sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    text-rendering: optimizeLegibility;
+}
+
+section {
+    border: solid 1px #cccccc;
+    background: #ffffff;
+    padding: 2%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+.clearfix {
+    zoom: 1;
+}
+
+.clearfix::after {
+    content: '.';
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+#home-hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.600), rgba(0, 0, 0, 0.600)), url("./img/Neon-City.jpg");
+    background-size: auto auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    background-attachment: fixed;
+}
+
+#head-title {
+    font-family: 'Shrikhand', cursive;
+    text-transform: lowercase;
+    /* margin: 0%; */
+    letter-spacing: 2px;
+    font-weight: 200;
+    font-size: 70px;
+}
+
+.description {
+    height: 80vh;
+    width: auto;
+}
+
+.project {
+    height: 80vh;
+    width: auto;
+}
+
+
+/* Proflie-image */
+
+// Small devices (landscape phones, 576px and up)
+@media screen and (min-width: 576px) {
+    ...
+}
+
+// Medium devices (tablets, 768px and up)
+@media screen and (min-width: 768px) {
+    ...
+}
+
+// Large devices (desktops, 992px and up)
+@media screen and (min-width: 992px) {
+    ...
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media screen and (min-width: 1200px) {
+    ...
+}
