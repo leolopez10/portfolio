@@ -16,7 +16,8 @@ font-family: 'Shrikhand', cursive;
 font-family: 'Suez One', serif;
 font-family: 'Yatra One', cursive; */
 
-* {
+
+/* * {
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
@@ -62,8 +63,10 @@ section {
 #head-title {
     font-family: 'Shrikhand', cursive;
     text-transform: lowercase;
-    /* margin: 0%; */
-    letter-spacing: 2px;
+    /* margin: 0%; ============= originally commented out*/
+
+
+/* letter-spacing: 2px;
     font-weight: 200;
     font-size: 70px;
 }
@@ -76,7 +79,555 @@ section {
 .project {
     height: 80vh;
     width: auto;
+} */
+
+
+/* ============================================Inserted from UDG====================================================== */
+
+
+/* ----------------------------------------------- */
+
+
+/* Document Rules */
+
+
+/* ----------------------------------------------- */
+
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
 }
+
+html,
+body {
+    background-color: black;
+    color: red;
+    font-family: Darker Grotesque, Arial, sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    text-rendering: optimizeLegibility;
+}
+
+
+/* clears floats from other content (look up how it works)*/
+
+.clearfix {
+    zoom: 1;
+}
+
+.clearfix::after {
+    content: '.';
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+
+/* ----------------------------------------------- */
+
+
+/* Resusable Rules */
+
+
+/* ----------------------------------------------- */
+
+
+/* this so cotainers will be centered in the page*/
+
+.row {
+    max-width: 1140px;
+    margin: 0 auto 0 auto;
+}
+
+section {
+    padding: 3%;
+}
+
+.box {
+    padding: 1%;
+}
+
+
+/*------------ headings --------- */
+
+h1,
+h2,
+h3 {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+h1 {
+    margin: 0%;
+    font-size: 400%;
+    transform: rotate(270deg);
+    letter-spacing: 2px;
+    font-weight: 200;
+    text-transform: capitalize;
+}
+
+h2 {
+    font-size: 300%;
+    font-weight: 100;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+h2::after {
+    display: block;
+    height: 2px;
+    background-color: white;
+    content: " ";
+    margin-top: 10px;
+}
+
+h3 {
+    font-size: 110%;
+    text-align: center;
+}
+
+h3::after {
+    display: block;
+    height: 2px;
+    background-color: white;
+    content: " ";
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+
+
+/*-----------------paragraphs------------- */
+
+.long-copy {
+    line-height: 120%;
+    width: 70%;
+    margin-left: 15%;
+    font-size: 120%;
+}
+
+.box p {
+    line-height: 120%;
+    font-size: 90%;
+}
+
+
+/*-----------------Icons------------- */
+
+.icon-big {
+    font-size: 275%;
+    display: block;
+    color: white;
+}
+
+.icon-small {
+    display: inline-block;
+    width: 30px;
+    text-align: center;
+    color: white;
+    font-size: 120%;
+    /* secrets to align text and icons*/
+    line-height: 120%;
+    vertical-align: middle;
+    margin-top: -4px;
+}
+
+
+/* -------------------------links------------------- */
+
+a:link,
+a:visited {
+    color: red;
+    text-decoration: none;
+    padding-bottom: 1px;
+    border-bottom: solid transparent;
+}
+
+a:hover,
+a:active {
+    border-bottom: solid red;
+    transition: border-bottom 0.8s;
+}
+
+
+/* ----- BUTTONS ----- */
+
+
+/*.btn:link,
+    .btn:visited,
+    input[type=submit] {
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: 300;
+    text-decoration: none;
+    border-radius: 200px;
+    -webkit-transition: background-color 0.2s, border 0.2s, color 0.2s;
+    transition: background-color 0.2s, border 0.2s, color 0.2s;
+    }
+    
+    .btn-full:link,
+    .btn-full:visited,
+    input[type=submit] {
+    background-color: #e67e22;
+    border: 1px solid #e67e22;
+    color: #fff;
+    margin-right: 15px;
+    }
+    
+    .btn-ghost:link,
+    .btn-ghost:visited {
+    border: 1px solid #e67e22;
+    color: #e67e22;
+    }
+    
+    .btn:hover,
+    .btn:active,
+    input[type=submit]:hover,
+    input[type=submit]:active {
+    background-color: #cf6d17;
+    }
+    
+    .btn-full:hover,
+    .btn-full:active {
+    border: 1px solid #cf6d17;
+    }
+    
+    .btn-ghost:hover,
+    .btn-ghost:active {
+    border: 1px solid #cf6d17;
+    color: #fff;
+    }*/
+
+
+/* --------------------------------------------------------------------------------------*/
+
+
+/* -- Features --*/
+
+
+/* --------------------------------------------------------------------------------------*/
+
+.section-features .long-copy {
+    margin-bottom: 30px;
+}
+
+
+/* --------------------------------------------------------------------------------------*/
+
+
+/* -- /* section 0 UDG introduction*/
+
+
+/* background-size: cover; for full screen effect*/
+
+
+/* --------------------------------------------------------------------------------------*/
+
+
+/* section 0 UDG introduction*/
+
+
+/* background-size: cover; for full screen effect*/
+
+header {
+    background-image: url("./Img/UDG_still.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    background-attachment: fixed;
+}
+
+.udg-intro {
+    position: absolute;
+    width: 1140px;
+    right: 40%;
+    top: 10%;
+}
+
+
+/* --------------------------------------------------------------------------------------*/
+
+
+/* --- Artisits --*/
+
+
+/* --------------------------------------------------------------------------------------*/
+
+h3 {
+    font-size: 200%;
+    text-decoration-style: double;
+}
+
+.section-feature {
+    width: 100%;
+    height: auto;
+}
+
+.project {
+    display: inline;
+    overflow: hidden;
+}
+
+.project-photo img {
+    height: 500px;
+    width: auto;
+    opacity: .5;
+    transform: scale(1);
+    transition: transform .8s, opacity .8s;
+}
+
+.project-photo img:hover {
+    opacity: 1;
+    transform: scale(1.25);
+    transition: transform 0.5s, opacity 0.5s;
+}
+
+
+/*----------Navigation Bar-------*/
+
+.main-nav {
+    list-style: none;
+    text-align: center;
+}
+
+.main-nav li {
+    display: inline-block;
+    margin: 75px;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited {
+    color: red;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 200%;
+    border-top: 2px solid transparent;
+    border-bottom: 0px;
+    transition: border-top 0.8s;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active {
+    border-top: 2px solid red;
+}
+
+
+/* --------------------------------------------------------------------------------------*/
+
+
+/* -- Album Art --*/
+
+
+/* --------------------------------------------------------------------------------------*/
+
+.album-art {
+    padding: 0%;
+}
+
+.album-showcase {
+    list-style: none;
+    width: 100%;
+}
+
+.album-showcase li {
+    display: block;
+    float: left;
+    width: 25%;
+}
+
+.album-photo {
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+}
+
+.album-photo img {
+    opacity: 0.7;
+    width: 100%;
+    height: 100%;
+    transform: scale(1.03) rotate(0deg);
+    transition: transform .5s, opacity .5s;
+}
+
+.album-photo img:hover {
+    opacity: 1;
+    transform: scale(1.5) rotate(-12deg);
+    transition: transform 0.5s, opacity 0.5s, ;
+}
+
+
+/* ----------------------------------------------- */
+
+
+/* How we make music */
+
+
+/* ----------------------------------------------- */
+
+.section-create {
+    margin-top: 20px;
+}
+
+.steps-box {}
+
+.steps-box:first-child
+/* selects the first of the step-boxes*/
+
+{
+    text-align: right;
+    padding-right: 3%;
+    margin-top: 30px;
+}
+
+.steps-box:last-child {
+    padding-left: 3%;
+    margin-top: 70px;
+}
+
+.first-album {
+    width: 100%;
+}
+
+.steps {
+    margin-bottom: 50px;
+}
+
+.steps:last-of-type {}
+
+.steps div {
+    color: white;
+    border: 2px solid red;
+    display: inline-block;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    padding: 5px;
+    float: left;
+    font-size: 150%;
+    margin-right: 25px;
+}
+
+.music-apps img {
+    height: 50px;
+    width: auto;
+    margin-right: 10px;
+}
+
+.music-apps:link,
+.music-apps:visited {
+    border: 0px;
+}
+
+
+/* ----------------------------------------------- */
+
+
+/* Touring Cities */
+
+
+/* ----------------------------------------------- */
+
+.box img {
+    height: 150px;
+    width: 100%;
+}
+
+.city-feature {
+    margin-bottom: 5px;
+}
+
+
+/* --------------------------------------------------------------------------------------*/
+
+
+/* -- Testimonial/Blog link --*/
+
+
+/* --------------------------------------------------------------------------------------*/
+
+.section-testimonials {
+    background-image: linear-gradient(hsla(0, 0%, 0%, 0.075), hsla(0, 0%, 0%, 0.075)), url(./Img/testimonial_background_img.jpeg);
+    background-size: cover;
+    color: white;
+    background-attachment: fixed;
+    /* makes the image stay put*/
+}
+
+
+/* adding quotation marks in CSS */
+
+blockquote {
+    padding: 2%;
+    font-style: italic;
+    position: relative;
+    /*parent element*/
+    margin-top: 20px;
+}
+
+blockquote:before {
+    content: "\201D";
+    font-size: 400%;
+    display: block;
+    position: absolute;
+    /* parent elements needs to be relative*/
+    top: -40px;
+    left: -10px;
+}
+
+
+/* end of quotation marks */
+
+cite {
+    font-size: 90%;
+    margin-top: 25px;
+    display: block;
+    /*make a line break */
+}
+
+cite img {
+    height: 45px;
+    border-radius: 50%;
+    margin-right: 10px;
+    vertical-align: middle;
+    /* aligns the photos with the font line */
+}
+
+
+/* --------------------------------------------------------------------------------------*/
+
+
+/* -- Section 1: Artisits  orginial set up --*/
+
+
+/* --------------------------------------------------------------------------------------*/
+
+
+/*#Grim {
+    background-image:  url("./Img/Grim.JPEG");
+    background-color: white;
+    background-size: cover;
+    height: 500px;
+    width: 32%;
+    
+    }
+    #C-Beezy {
+    background-image: url("./Img/C-Beezy.png");
+    background-color: red;
+    background-size: cover;
+    height: 500px;
+    width: 32%;
+    }
+    #John {
+    background-image: url("./Img/John.jpg");
+    background-color: black;
+    background-size: cover;
+    height: 500px;
+    width: 32%;*/
+
+
+/* ==================================================================================================================== */
 
 
 /* Proflie-image */
