@@ -98,7 +98,7 @@ function Blog() {
                         {post.title} by {post.author}
                       </strong>
                     </Link>
-                    <DeleteBtn onClick={() => deleteBlogPost(post._id)} />
+                    <DeleteBtn onClick={() => deletePost(post._id)} />
                   </ListItem>
                 ))}
               </List>
