@@ -2,7 +2,8 @@ const router = require("express").Router();
 const blogController = require("../../../controllers/blogController");
 
 // Matches with "/api/books"
-router.route("/")
+router
+  .route("/blogpost")
   .get(blogController.findAll)
   .post(blogController.create);
 
