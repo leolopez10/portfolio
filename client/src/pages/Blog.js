@@ -7,29 +7,29 @@ import { Col, Row, Container } from "../components/Grid";
 import { List, ListItem } from "../components/List";
 import { Input, TextArea, FormBtn } from "../components/Form";
 
-function Books() {
+function Blog() {
   // Setting our component's initial state
-  const [books, setBooks] = useState([])
+  const [posts, setPosts] = useState([])
   const [formObject, setFormObject] = useState({})
 
   // Load all books and store them with setBooks
   useEffect(() => {
-    loadBooks()
+    loadPosts()
   }, [])
 
   // Loads all books and sets them to books
-  function loadBooks() {
-    API.getBooks()
+  function loadPosts() {
+    API.getBlogPosts()
       .then(res => 
-        setBooks(res.data)
+        setPosts(res.data)
       )
       .catch(err => console.log(err));
   };
 
   // Deletes a book from the database with a given id, then reloads books from the db
-  function deleteBook(id) {
-    API.deleteBook(id)
-      .then(res => loadBooks())
+  function deletePost(id) {
+    API.deleteBlogPost(id)
+      .then(res => loadPosts())
       .catch(err => console.log(err));
   }
 
@@ -44,12 +44,12 @@ function Books() {
   function handleFormSubmit(event) {
     event.preventDefault();
     if (formObject.title && formObject.author) {
-      API.saveBook({
+      API.saveBlogPost({
         title: formObject.title,
         author: formObject.author,
-        synopsis: formObject.synopsis
+        post: formObject.post
       })
-        .then(res => loadBooks())
+        .then(res => loadPosts())
         .catch(err => console.log(err));
     }
   };
@@ -59,7 +59,7 @@ function Books() {
         <Row>
           <Col size="md-6">
             <Jumbotron>
-              <h1>What Books Should I Read?</h1>
+              <h1>Welcome to my Blog</h1>
             </Jumbotron>
             <form>
               <Input
@@ -74,31 +74,31 @@ function Books() {
               />
               <TextArea
                 onChange={handleInputChange}
-                name="synopsis"
-                placeholder="Synopsis (Optional)"
+                name="post"
+                placeholder="post (required)"
               />
               <FormBtn
                 disabled={!(formObject.author && formObject.title)}
                 onClick={handleFormSubmit}
               >
-                Submit Book
+                Submit Post
               </FormBtn>
             </form>
           </Col>
           <Col size="md-6 sm-12">
             <Jumbotron>
-              <h1>Books On My List</h1>
+              <h1>My featured Posts</h1>
             </Jumbotron>
-            {books.length ? (
+            {posts.length ? (
               <List>
-                {books.map(book => (
-                  <ListItem key={book._id}>
-                    <Link to={"/books/" + book._id}>
+                {posts.map(post => (
+                  <ListItem key={post._id}>
+                    <Link to={"/posts/" + post._id}>
                       <strong>
-                        {book.title} by {book.author}
+                        {post.title} by {post.author}
                       </strong>
                     </Link>
-                    <DeleteBtn onClick={() => deleteBook(book._id)} />
+                    <DeleteBtn onClick={() => deleteBlogPost(post._id)} />
                   </ListItem>
                 ))}
               </List>
@@ -112,4 +112,4 @@ function Books() {
   }
 
 
-export default Books;
+export default Blog;
