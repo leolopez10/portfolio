@@ -18,9 +18,9 @@ function App() {
           <Route exact path="/blog">
             <Blog />
           </Route>
-          <Route exact path="/blog/:id">
+          {/* <Route exact path="/blog/:id">
             <Detail />
-          </Route>
+          </Route> */}
           <Route>
             <NoMatch />
           </Route>
