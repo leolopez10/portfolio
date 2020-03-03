@@ -8,6 +8,8 @@ const routes = require("./routes");
 const app = express();
 const PORT = process.env.PORT || 3001;
 
+const db = require("./models");
+
 // Define middleware here
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
@@ -17,8 +19,45 @@ if (process.env.NODE_ENV === "production") {
 }
 
 //Check to see if backend is talking with the frontend
-app.get("/api/hello", function (req, res){
+app.get("/api/hello", function (req, res) {
     res.send("SUCCESS======================================Backend is talking to the Frontend")
+})
+
+app.get("/api/blog", function (req, res) {
+    db.Blog
+        .find(req.query)
+        .sort({ date: -1 })
+        .then(dbModel => res.json(dbModel))
+        .catch(err => res.status(422).json(err))
+})
+
+app.post("/api/blog", function (req, res) {
+    db.Blog
+        .create(req.body)
+        .then(dbModel => res.json(dbModel))
+        .catch(err => res.status(422).json(err))
+})
+
+app.get("/api/blog/:id", function (req, res) {
+    db.Blog
+        .findByID(req.params.id)
+        .then(dbModel => res.json(dbModel))
+        .catch(err => res.status(422).json(err))
+})
+
+app.put("/api/blog/:id", function (req, res) {
+    db.Blog
+        .findOneAndUpdate({ _id: req.params.id }, req.body)
+        .then(dbModel => res.json(dbModel))
+        .catch(err => res.status(422).json(err))
+})
+
+app.delete("/api/blog/:id", function (req, res) {
+    db.Blog
+        .findById({ _id: req.params.id })
+        .then(dbModel => dbModel.remove())
+        .then(dbModel => res.json(dbModel))
+        .catch(err => res.status(422).json(err))
 })
 
 // Add routes, both API and view
@@ -32,8 +71,8 @@ app.get("*", (req, res) => {
 
 // Connect to the Mongo DB
 mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/portfolioDB")
-.then(() => console.log("Database is connected"))
-.catch(err => console.log(err));
+    .then(() => console.log("Database is connected"))
+    .catch(err => console.log(err));
 
 // Start the API server
 app.listen(PORT, function () {
