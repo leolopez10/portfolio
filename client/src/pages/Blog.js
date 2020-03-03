@@ -92,7 +92,7 @@ function Blog() {
               <List>
                 {posts.map(post => (
                   <ListItem key={post._id}>
-                    <Link to={"/posts/" + post._id}>
+                    <Link to={"/blog/" + post._id}>
                       <strong>
                         {post.title} by {post.author}
                       </strong>

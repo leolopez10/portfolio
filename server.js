@@ -40,7 +40,7 @@ app.post("/api/blog", function (req, res) {
 
 app.get("/api/blog/:id", function (req, res) {
     db.Blog
-        .findByID(req.params.id)
+        .findById(req.params.id)
         .then(dbModel => res.json(dbModel))
         .catch(err => res.status(422).json(err))
 })
