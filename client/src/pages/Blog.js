@@ -20,14 +20,14 @@ function Blog() {
 
   // Loads all books and sets them to books
   function loadPosts() {
-    axios.get("/api/blog")
+    axios.get("/api/blog/")
       .then(res => setPosts(res.data))
       .catch(err => console.log(err));
   };
 
   // Deletes a book from the database with a given id, then reloads books from the db
   function deletePost(id) {
-    API.deleteBlogPost(id)
+    axios.delete("/api/blog/" + id)
       .then(res => loadPosts())
       .catch(err => console.log(err));
   }
@@ -43,7 +43,7 @@ function Blog() {
   function handleFormSubmit(event) {
     event.preventDefault();
     if (formObject.title && formObject.author) {
-      API.saveBlogPost({
+      axios.post("/api/blog/", {
         title: formObject.title,
         author: formObject.author,
         post: formObject.post

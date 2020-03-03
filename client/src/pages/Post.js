@@ -2,7 +2,9 @@ import React, { useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import { Col, Row, Container } from "../components/Grid";
 import Jumbotron from "../components/Jumbotron";
-import API from "../utils/API";
+// import API from "../utils/API";
+
+import axios from "axios";
 
 function Post(props) {
   const [post, setPost] = useState({})
@@ -11,10 +13,10 @@ function Post(props) {
   // e.g. localhost:3000/books/599dcb67f0f16317844583fc
   const {id} = useParams()
   useEffect(() => {
-    API.getBlogId(id)
+    axios.get("/api/blog/" + id)
       .then(res => setPost(res.data))
       .catch(err => console.log(err));
-  }, [])
+  })
 
   return (
       <Container fluid>
