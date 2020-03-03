@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from "react";
 import DeleteBtn from "../components/DeleteBtn";
 import Jumbotron from "../components/Jumbotron";
-import API from "../utils/API";
+// import API from "../utils/API";
+import axios from "axios";
 import { Link } from "react-router-dom";
 import { Col, Row, Container } from "../components/Grid";
 import { List, ListItem } from "../components/List";
@@ -19,10 +20,8 @@ function Blog() {
 
   // Loads all books and sets them to books
   function loadPosts() {
-    API.getBlogPosts()
-      .then(res => 
-        setPosts(res.data)
-      )
+    axios.get("/api/blog")
+      .then(res => setPosts(res.data))
       .catch(err => console.log(err));
   };
 
