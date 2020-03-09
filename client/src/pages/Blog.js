@@ -58,7 +58,7 @@ function Blog() {
         <Row>
           <Col size="md-6">
             <Jumbotron>
-              <h1>Welcome to my Blog</h1>
+              <h1>Welcome to my <br /> message-board</h1>
             </Jumbotron>
             <form>
               <Input
@@ -86,7 +86,7 @@ function Blog() {
           </Col>
           <Col size="md-6 sm-12">
             <Jumbotron>
-              <h1>My featured Posts</h1>
+              <h1>Featured Posts</h1>
             </Jumbotron>
             {posts.length ? (
               <List>
