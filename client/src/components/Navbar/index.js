@@ -43,9 +43,11 @@ function Navbar() {
           </li>
         </ul>
         {/* Create icons for social media */}
-        <a className="navbar-brand" rel="noopener noreferrer" target="_blank" href="https://www.linkedin.com/in/leo-lopez10/">
+        <a className="navbar-brand" href="https://github.com/leolopez10" target="_blank" data-toggle="tooltip" data-placement="top"><i className="fab fa-github fa-2x" role="button"></i></a>
+        <a className="navbar-brand" href="https://github.com/leolopez10" target="_blank" data-toggle="tooltip" data-placement="top"><i className="fab fa-linkedin fa-2x" role="button"></i></a>
+        {/* <a className="navbar-brand" rel="noopener noreferrer" target="_blank" href="https://www.linkedin.com/in/leo-lopez10/">
           <h1 id="head-title">Leo Lopez</h1>
-        </a>
+        </a> */}
       </div>
     </nav>
   );
