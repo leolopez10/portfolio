@@ -4,7 +4,7 @@ import Blog from "./pages/Blog";
 import Home from "./pages/Home";
 import Post from "./pages/Post";
 import NoMatch from "./pages/NoMatch";
-import Nav from "./components/Nav";
+import Navbar from "./components/Navbar";
 
 import axios from "axios";
 
@@ -19,7 +19,7 @@ function App() {
   return (
     <Router>
       <div>
-        <Nav />
+        <Navbar />
         <Switch>
           <Route exact path="/">
             <Home />

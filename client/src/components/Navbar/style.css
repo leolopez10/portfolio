@@ -1,0 +1,17 @@
+nav.navbar.navbar-default {
+  margin-bottom: 0;
+}
+
+.nav-link:link,
+.nav-link:visited {
+    color: #2A9FD6;
+    text-decoration: none;
+    padding-bottom: 1px;
+    border-bottom: solid transparent;
+}
+
+.nav-link:hover,
+.nav-link:active {
+    border-bottom: solid #2A9FD6;
+    transition: border-bottom 0.8s;
+}
