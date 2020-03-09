@@ -24,27 +24,27 @@ address{
     width:32em;
     margin:0 0 0 16em;
     }	
-.section{
+.resume-section{
     margin: 0;
     padding:1em 0;
     }
-ul{
+.resume-ul{
     padding-left:.5em;
     margin-left:.5em;
     }
-h1{
+.resume-h1{
     margin:0 0 .1em 0;
     padding:1em 0 0 0;
     font-size:1.75em;
     border-bottom:3px double #000;
     }
-h2 {
+.resume-h2 {
     font-size:1.3em;
     font-variant: small-caps;
     letter-spacing: .06em;
     border-bottom:1px solid #000;
     }
-.section h3 {
+.resume-h3 {
     font-size:1em;
     font-variant: small-caps;
     margin-bottom:0;

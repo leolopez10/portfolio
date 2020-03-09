@@ -16,8 +16,8 @@ function Home() {
                 <img className="profile-logo img-fluid" src={profileLogo} alt="profile-logo"></img>
             </Jumbotron>
             <Container>
-                <Resume />
                 <Projects />
+                <Resume />
                 <Contact />
             </Container>
 

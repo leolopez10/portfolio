@@ -29,7 +29,7 @@ function Navbar() {
           </li> */}
           <li className="nav-item">
             {/* <!-- it will be resume --> */}
-            <AnchorLink className="nav-link" href="#about-me">about</AnchorLink>
+            <AnchorLink className="nav-link" href="#resume">resume</AnchorLink>
           </li>
           {/* add a project's page */}
           <li className="nav-item">
