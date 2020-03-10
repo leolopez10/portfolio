@@ -57,9 +57,55 @@ function ResumeTemplate() {
                             </ul>
                         </div>
                     </div>
+                   
+                    <div className="resume-section">
+                        <h2 className="resume-h2">Development Skills</h2>
+                        <table className="table">
+                            <thead>
+                                <tr>
+                                    <th>Browser-Based Technologies</th>
+                                    <th>API Interaction</th>
+                                    <th>Deployment/Command-Line</th>
+                                    <th>Server-Side Development</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>HTML5</td>
+                                    <td>API</td>
+                                    <td>Heroku</td>
+                                    <td>Node.js</td>
+                                </tr>
+                                <tr>
+                                    <td>CSS3</td>
+                                    <td>JSON</td>
+                                    <td>C-Panel</td>
+                                    <td>Express.js</td>
+                                </tr>
+                                <tr>
+                                    <td>JavaScript</td>
+                                    <td>AJAX</td>
+                                    <td>Git</td>
+                                    <td>Passport.js</td>
+                                </tr>
+                                <tr>
+                                    <td>JQuery</td>
+                                    <td>MySQL</td>
+                                    <td>GitBash</td>
+                                    <td>Progressive Web Applications</td>
+                                </tr>
+                                <tr>
+                                    <td>React.js</td>
+                                    <td>MongoDB</td>
+                                    <td>GitHub Pages</td>
+                                    <td>bcrypt.js</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
 
                     <div className="resume-section">
-                        <h2 className="resume-h2">Web Development</h2>
+                        <h2 className="resume-h2">Projects</h2>
                         <div className="content">
                             <span className="date"><span className="project-title"><a href="https://github.com/JayDub21/TheBookUp">the BookUp</a></span> &raquo; March 2020</span>
                             <h3 className="resume-h3">Back-End Developer</h3>
@@ -108,52 +154,6 @@ function ResumeTemplate() {
                             <li className="resume-li">Bachelor of Science in Public Health, Texas State University, San Marcos, TX,  Graduated - December 2018</li>
                             <li className="resume-li">Professional Degree in Architecture, Virginia Polytechnic Institute and State University, Blacksburg, VA,  August 2010 - December 2013</li>
                         </ul>
-                    </div>
-
-                    <div className="resume-section">
-                        <h2 className="resume-h2">Skills</h2>
-                        <table className="table">
-                            <thead>
-                                <tr>
-                                    <th>Browser-Based Technologies</th>
-                                    <th>API Interaction</th>
-                                    <th>Deployment/Command-Line</th>
-                                    <th>Server-Side Development</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>HTML5</td>
-                                    <td>API</td>
-                                    <td>Heroku</td>
-                                    <td>Node.js</td>
-                                </tr>
-                                <tr>
-                                    <td>CSS3</td>
-                                    <td>JSON</td>
-                                    <td>C-Panel</td>
-                                    <td>Express.js</td>
-                                </tr>
-                                <tr>
-                                    <td>JavaScript</td>
-                                    <td>AJAX</td>
-                                    <td>Git</td>
-                                    <td>Passport.js</td>
-                                </tr>
-                                <tr>
-                                    <td>JQuery</td>
-                                    <td>MySQL</td>
-                                    <td>GitBash</td>
-                                    <td>Progressive Web Applications</td>
-                                </tr>
-                                <tr>
-                                    <td>React.js</td>
-                                    <td>MongoDB</td>
-                                    <td>GitHub Pages</td>
-                                    <td>bcrypt.js</td>
-                                </tr>
-                            </tbody>
-                        </table>
                     </div>
                 </section>
             </Container>
