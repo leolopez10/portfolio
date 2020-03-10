@@ -35,12 +35,12 @@ function Navbar() {
           <li className="nav-item">
             <AnchorLink className="nav-link" href="#projects">projects</AnchorLink>
           </li>
-          <li className="nav-item">
+          {/* <li className="nav-item">
             <AnchorLink className="nav-link" href="#contact-form">contact</AnchorLink>
-          </li>
-          <li className="nav-item">
+          </li> */}
+          {/* <li className="nav-item">
             <Link className="nav-link" to="/blog">blog</Link>
-          </li>
+          </li> */}
         </ul>
         {/* Create icons for social media */}
         <a className="navbar-brand" href="https://github.com/leolopez10" target="_blank" data-toggle="tooltip" data-placement="top"><i className="fab fa-github fa-2x" role="button"></i></a>

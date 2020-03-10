@@ -28,12 +28,12 @@ function App() {
           <Route exact path="/resume">
             <Resume />
           </Route>
-          <Route exact path="/blog">
+          {/* <Route exact path="/blog">
             <Blog />
           </Route>
           <Route exact path="/blog/:id">
             <Post />
-          </Route>
+          </Route> */}
           <Route>
             <NoMatch />
           </Route>

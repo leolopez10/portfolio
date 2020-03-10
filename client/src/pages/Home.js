@@ -17,7 +17,7 @@ function Home() {
             </Jumbotron>
             <Container>
                 <Projects />
-                <Contact />
+                {/* <Contact /> */}
             </Container>
 
         </div>
