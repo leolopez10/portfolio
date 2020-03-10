@@ -1,10 +1,11 @@
 import React from "react";
+import "./style.css"
 
 function Contact(props) {
     return (
         <div>
             <section id="contact-form" className="section-feature">
-                <h2>Contact Me</h2>
+                <h2 className="contact-h2">Contact Me</h2>
                 <form>
                     <div className="form-group">
                         <label htmlFor="name">Name</label>

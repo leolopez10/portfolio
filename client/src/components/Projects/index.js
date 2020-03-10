@@ -12,7 +12,7 @@ function Projects() {
     return (
         <div>
             <section id="projects" className="section-feature">
-                <h2>Projects</h2>
+                <h2 className="project-h2">Projects</h2>
                 <Row>
                 <Col size="md-4 project">
                         <a target="_blank" rel="noopener noreferrer" href="https://the-bookup-dev.herokuapp.com/">

@@ -1,3 +1,6 @@
+.project-h2 {
+    text-align: center;
+}
 h3 {
     font-size: 200%;
     text-decoration-style: double;
@@ -16,10 +19,14 @@ h3 {
     display: inline;
     overflow: hidden;
 }
+.photo-div {
+    display: flex;
+    justify-content: center;
+}
 
 .photo-div img {
-    height: 300px;
-    width: auto;
+    height: 100%;
+    width: 100%;
     opacity: .5;
     transform: scale(1);
     transition: transform .8s, opacity .8s;
