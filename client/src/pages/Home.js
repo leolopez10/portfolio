@@ -1,7 +1,7 @@
 import React from "react";
 import Container from "../components/Container";
 import Jumbotron from "../components/Jumbotron";
-import Resume from "../components/Resume";
+// import Resume from "../components/Resume";
 import Projects from "../components/Projects";
 import Contact from "../components/Contact";
 // import Row from "../components/Row";
@@ -17,7 +17,6 @@ function Home() {
             </Jumbotron>
             <Container>
                 <Projects />
-                <Resume />
                 <Contact />
             </Container>
 

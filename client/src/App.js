@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Blog from "./pages/Blog";
 import Home from "./pages/Home";
 import Post from "./pages/Post";
+import Resume from "./pages/Resume";
 import NoMatch from "./pages/NoMatch";
 import Navbar from "./components/Navbar";
 
@@ -23,6 +24,9 @@ function App() {
         <Switch>
           <Route exact path="/">
             <Home />
+          </Route>
+          <Route exact path="/resume">
+            <Resume />
           </Route>
           <Route exact path="/blog">
             <Blog />

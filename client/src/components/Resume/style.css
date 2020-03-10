@@ -1,3 +1,10 @@
+
+#id {
+    padding:2em;
+    margin:1em auto;
+    border:2px solid whitesmoke;
+    max-width: 50em;
+    }
 #address{
     float:right;
     padding-top:2.5em;
