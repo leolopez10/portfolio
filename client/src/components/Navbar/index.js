@@ -33,7 +33,7 @@ function Navbar() {
           </li>
           {/* add a project's page */}
           <li className="nav-item">
-            <AnchorLink className="nav-link" href="#projects">projects</AnchorLink>
+            <Link className="nav-link" to="/">projects</Link>
           </li>
           {/* <li className="nav-item">
             <AnchorLink className="nav-link" href="#contact-form">contact</AnchorLink>
