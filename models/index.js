@@ -1,4 +1,5 @@
 module.exports = {
-    Blog: require("./blog")
+    Blog: require("./blog"),
+    User: require("./user")
   };
   

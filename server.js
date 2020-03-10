@@ -22,7 +22,9 @@ if (process.env.NODE_ENV === "production") {
 app.get("/api/hello", function (req, res) {
     res.send("SUCCESS======================================Backend is talking to the Frontend")
 })
-
+//==========================================
+//Blog Routes
+//==========================================
 app.get("/api/blog", function (req, res) {
     db.Blog
         .find(req.query)
