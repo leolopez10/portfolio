@@ -1,63 +1,109 @@
-
 #id {
-    padding:2em;
-    margin:1em auto;
-    border:2px solid whitesmoke;
+    padding: 2em;
+    margin: 1em auto;
+    border: 2px solid whitesmoke;
     max-width: 50em;
-    }
-#address{
-    float:right;
-    padding-top:2.5em;
-    }
-#contact{
-    text-align:right;
-    }
+}
+
+#address {
+    float: right;
+    padding-top: 2.5em;
+}
+
+#contact {
+    text-align: right;
+}
+
 .date {
-    float:left;
-    font-size:1em;
-    margin:0 0 0 -16em;
-    text-align:right;
-    }
-.project-title{
+    float: left;
+    font-size: 1em;
+    margin: 0 0 0 -16em;
+    text-align: right;
+}
+
+.project-title {
     font-weight: bold;
 }
-abbr, acronym{
-    border-bottom:1px dotted #333;
-    cursor:help;
-    }	
-address{
-    font-style:italic;
-    color:whitesmoke;
-    font-size:.9em;
-    }
-.content{
-    width:32em;
-    margin:0 0 0 16em;
-    }	
-.resume-section{
+
+abbr,
+acronym {
+    border-bottom: 1px dotted #333;
+    cursor: help;
+}
+
+address {
+    font-style: italic;
+    color: whitesmoke;
+    font-size: .9em;
+}
+
+.content {
+    width: 32em;
+    margin: 0 0 0 16em;
+}
+
+.resume-section {
     margin: 0;
-    padding:1em 0;
-    }
-.resume-ul{
-    padding-left:.5em;
-    margin-left:.5em;
+    padding: 1em 0;
+}
+
+.resume-ul {
+    padding-left: .5em;
+    margin-left: .5em;
     margin-bottom: 3em;
-    }
-.resume-h1{
-    margin:0 0 .1em 0;
-    padding:1em 0 0 0;
-    font-size:1.75em;
-    border-bottom:3px double #000;
-    }
+}
+
+.resume-h1 {
+    margin: 0 0 .1em 0;
+    padding: 1em 0 0 0;
+    font-size: 1.75em;
+    border-bottom: 3px double #000;
+}
+
 .resume-h2 {
-    font-size:1.3em;
+    font-size: 1.3em;
     font-variant: small-caps;
     letter-spacing: .06em;
-    border-bottom:1px solid #000;
-    }
+    border-bottom: 1px solid #000;
+}
+
 .resume-h3 {
-    font-size:1em;
+    font-size: 1em;
     font-variant: small-caps;
-    margin-bottom:0;
-    width:14em;
+    margin-bottom: 0;
+    width: 14em;
+}
+
+@media screen and (max-width: 700px) {
+    #contact {
+        text-align: left;
     }
+
+    .content {
+        flex-direction: column;
+        width: 100%;
+        margin: 0 0 0 0;
+    }
+
+    .date {
+        font-size: 1em;
+        margin: 0 0 1em 0;
+    }
+
+    .resume-h3 {
+        display: inline-block;
+        text-align: left;
+        font-size: 1em;
+        font-variant: small-caps;
+        margin: 0 0 1em 0;
+        width: 14em;
+    }
+
+    .resume-h2 {
+        text-align: center;
+        font-size: 1.3em;
+        font-variant: small-caps;
+        letter-spacing: .06em;
+        border-bottom: 1px solid #000;
+    }
+}

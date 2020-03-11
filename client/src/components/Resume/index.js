@@ -60,7 +60,7 @@ function ResumeTemplate() {
                    
                     <div className="resume-section">
                         <h2 className="resume-h2">Development Skills</h2>
-                        <table className="table">
+                        <table className="table table-responsive">
                             <thead>
                                 <tr>
                                     <th>Browser-Based Technologies</th>
@@ -150,7 +150,7 @@ function ResumeTemplate() {
                     <div className="resume-section">
                         <h2 className="resume-h2">Education</h2>
                         <ul className="resume-ul">
-                            <li className="resume-li">Certificate of Web Development,The University of Texas, Austin, TX,  Graduated - March 2020</li>
+                            <li className="resume-li">Certificate of Web Development, The University of Texas, Austin, TX,  Graduated - March 2020</li>
                             <li className="resume-li">Bachelor of Science in Public Health, Texas State University, San Marcos, TX,  Graduated - December 2018</li>
                             <li className="resume-li">Professional Degree in Architecture, Virginia Polytechnic Institute and State University, Blacksburg, VA,  August 2010 - December 2013</li>
                         </ul>
