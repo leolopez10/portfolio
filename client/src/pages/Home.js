@@ -3,7 +3,7 @@ import Container from "../components/Container";
 import Jumbotron from "../components/Jumbotron";
 // import Resume from "../components/Resume";
 import Projects from "../components/Projects";
-import Contact from "../components/Contact";
+// import Contact from "../components/Contact";
 // import Row from "../components/Row";
 // import Col from "../components/Col";
 import profileLogo from "../img/profilelogo.png";

@@ -1,8 +1,8 @@
 import React, { useEffect } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import Blog from "./pages/Blog";
+// import Blog from "./pages/Blog";
 import Home from "./pages/Home";
-import Post from "./pages/Post";
+// import Post from "./pages/Post";
 import Resume from "./pages/Resume";
 import NoMatch from "./pages/NoMatch";
 import Navbar from "./components/Navbar";

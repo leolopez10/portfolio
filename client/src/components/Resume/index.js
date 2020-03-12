@@ -1,9 +1,9 @@
 import React from "react";
 import "./style.css"
-import ProfilePic from "../../img/profile-pic.png";
+// import ProfilePic from "../../img/profile-pic.png";
 import Container from "../Container";
-import Row from "../Row";
-import Col from "../Col";
+// import Row from "../Row";
+// import Col from "../Col";
 
 function ResumeTemplate() {
     return (
